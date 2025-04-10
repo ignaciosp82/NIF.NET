@@ -3,8 +3,10 @@ A validator for spanish NIFs
 
 ## Usage
 ```csharp
-// Validate any type of NIF
 INIFValidator nifValidator = new NIFValidator();
+
+// Validate any type of NIF
+bool isValidNif = nifValidator.IsValid("12345678Z");
 
 // Validate NIF of natural person (DNI)
 bool isValidDni = nifValidator.IsValid("12345678Z", NIFType.NaturalPerson);
