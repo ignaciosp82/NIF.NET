@@ -1,5 +1,8 @@
 # NIF.NET
+
 A validator for spanish NIFs
+
+![NuGet Version](https://img.shields.io/nuget/v/NIF.NET)
 
 ## Usage
 ```csharp
