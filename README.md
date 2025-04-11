@@ -2,7 +2,7 @@
 
 A validator for spanish NIFs
 
-![NuGet Version](https://img.shields.io/nuget/v/NIF.NET)
+[![NuGet Version](https://img.shields.io/nuget/v/NIF.NET)](https://www.nuget.org/packages/NIF.NET/1.0.0)
 
 ## Usage
 ```csharp
