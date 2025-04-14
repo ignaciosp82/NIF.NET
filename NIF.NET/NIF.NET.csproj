@@ -1,27 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <Title>NIF.NET</Title>
-    <Authors>ignaciosp82</Authors>
-    <Description>A validator for spanish NIFs</Description>
-    <PackageProjectUrl>https://github.com/ignaciosp82/NIF.NET</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/ignaciosp82/NIF.NET</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>nif;validation</PackageTags>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<PackageVersion>1.0.1</PackageVersion>
+		<AssemblyVersion>$(PackageVersion)</AssemblyVersion>
+		<FileVersion>$(PackageVersion)</FileVersion>
+		<InformationalVersion>$(PackageVersion)</InformationalVersion>
+		<Title>NIF.NET</Title>
+		<Authors>ignaciosp82</Authors>
+		<Description>A validator for spanish NIFs</Description>
+		<PackageProjectUrl>https://github.com/ignaciosp82/NIF.NET</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/ignaciosp82/NIF.NET</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>nif;validation</PackageTags>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<Version>$(PackageVersion)</Version>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\LICENSE">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>

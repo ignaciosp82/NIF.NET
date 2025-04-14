@@ -32,17 +32,19 @@ namespace NIF.NET
             };
 
         private static bool IsValidNaturalPerson(string nif)
-            => nif != null
+            => (nif = nif?.ToUpper()) != null
                 && naturalPersonRegex.IsMatch(nif)
                 && naturalPersonControlChars[int.Parse(nif[0..8]) % 23] == nif[^1];
 
         private static bool IsValidForeigner(string nif)
-            => nif != null
+            => (nif = nif?.ToUpper()) != null
                 && foreignerRegex.IsMatch(nif)
                 && IsValidNaturalPerson($"{foreignerFirstLetterMap[nif[0]]}{nif[1..]}");
 
         private static bool IsValidLegalPerson(string nif)
         {
+            nif = nif?.ToUpper();
+
             if (nif == null || !legalPersonRegex.IsMatch(nif))
             {
                 return false;
